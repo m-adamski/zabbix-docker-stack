@@ -42,7 +42,7 @@ services:
     image: zabbix/zabbix-server-mysql:${ZABBIX_VERSION}
     container_name: zabbix-server
     ports:
-      - 10050:10050
+      - 10051:10051
     volumes:
       - zabbix-server.alert-scripts:/usr/lib/zabbix/alertscripts
       - zabbix-server.external-scripts:/usr/lib/zabbix/externalscripts
